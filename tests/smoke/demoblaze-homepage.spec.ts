@@ -16,7 +16,7 @@ test('verify Laptops link is displayed on Home page.', async({page}) => {
     await expect(linkLaptops).toBeVisible();
 })
 
-test.only('verify Monitors link is displayed on Hoe page.', async({page}) => {
+test('verify Monitors link is displayed on Hoe page.', async({page}) => {
 
     await page.goto('https://demoblaze.com/', {waitUntil: 'domcontentloaded'});
     const linkMonitors = page.getByRole('link', { name: 'Monitors', exact: true});
